@@ -30,11 +30,15 @@ body {
     width: 100%;
     height: 230px;
 }
+.Ordenar {
+    display: flex;
 
-.card {
-    background-color: rgb(8, 35, 53);
-    width: 12rem;
 }
+.images {
+    width: 350px;
+    margin-left: 50px;
+}
+
 .card h4{
     font-size: 22px;
     margin-bottom: 6px;
@@ -46,6 +50,15 @@ body {
 }
 .card-text {
     font-size: 13px;
+}
+
+.card-body2 {
+    color: aliceblue;
+    background-color: rgb(8, 35, 53);
+    border-radius: 3%;
+}
+.card-text2 {
+    font-size: 15px;
 }
 /*fin cartas de productos*/
 
@@ -70,7 +83,7 @@ footer {
 }
 
 /* Estilos para tabletas y pantallas medianas */
-@media screen and (min-width: 1199px) {
+@media screen and (max-width: 1199px) {
     body {
         font-size: 16px;
     }
