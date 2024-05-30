@@ -1,13 +1,23 @@
 body {
-    background-color: darkslategray;
+    background-color: rgb(17, 17, 17);
+    background-image: url(/assets/img/fondo.png);
     font-family: Arial, sans-serif;
 }
 
 /*navbar*/
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color: rgb(30,28,52,255) !important;
+    background-color: rgb(20, 16, 41, 255) !important;
 }
+
+.bg-input {
+    background-color: rgb(53, 50, 75, 255) !important;
+}
+
+.btn-input {
+    background-color: rgb(39, 39, 39);
+}
+
 .nav-link {
     color: azure;
 }
