@@ -1,13 +1,12 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/img/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/img/titulo.jpeg" sizes="32x32">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/img/">
-    <title>Login - Mega Games</title>
+    <title>Mega Games</title>
 </head>
 <body>
 
@@ -15,36 +14,42 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="70px" alt="MDN" /></a>
+          <a class="navbar-brand" href="/index.html"><img src="/assets/img/titulo.jpeg" width="70px" alt="MDN" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Redes</a>
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Categoria
+                  Dispositivo
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">PC</a></li>
                   <li><a class="dropdown-item" href="#">Xbox</a></li>
-                  <li><a class="dropdown-item" href="#">Playstation</a></li>
+                  <li><a class="dropdown-item" href="#">PlayStation</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contacto" aria-disabled="true">Contáctanos</a>
+                <a class="nav-link" aria-disabled="true">Contactanos</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="/login.html">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="registrar.html">Registrarse</a>
+                    <a class="nav-link" href="/registrar.html">Registrarse</a>
                 </li>
                 <li class="navbar-brand">
-                  <img src="./assets/img/carro.png" width="30px">
+                  <img src="/assets/img/carro.png" width="30px">
                   <a href="/assets/sitio/carrito.html">Carrito</a>
               </li>
             </ul>
@@ -56,26 +61,37 @@
       </nav>
     </header>
 
-    <main class="container">
-        <div class="row text-center justify-content-center pt-5">
-            <h1 class="text-light mb-5">Login</h1>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-body-tertiary rounded-4">
-                <form>
-                    <div class="mb-3">
-                        <label for="email" class="form-label text-light">Email:&nbsp;</label>
-                        <label id="error1" class="form-label" ></label>
-                        <input type="text" class="form-control bg-input text-light" id="email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label text-light">Contraseña:&nbsp;</label>
-                        <input type="password" class="form-control bg-input text-light" id="password">
-                    </div>
-                    <div class="mb-3">
-                        <button class="btn btn-input text-light" id="btnEnviar" type="submit">Entrar</button>
-                    </div>
-                </form>
+    <main>
+      <div class="card-bodyShop px-3 py-3" style="margin: 80px;  width: 60%;">
+          <h3 style="font-weight: bold">Tu Carrito</h3>
+          <li class="tabla">
+            <a class="Probando" href="/assets/sitio/gta5.html">
+            </a>
+          <a class="NombreJuego" href="/assets/sitio/gta5.html">Grand Theft Auto 5</a>
+          <span class="LetraPequeña">Producto Fisico</span>
+          <div class="ContadorPrecio">
+            <div class="ContadorPrecio1">
+                <button class="MenosMas" type="button">
+                  <span>-</span>
+                </button>
+                <span>1</span>
+                <button class="MenosMas" type="button">
+                  <span>+</span>
+                </button>
+              <div class="Separar">
+                <strong>
+                  <span class="Valor">$27.990</span>
+                </strong>
             </div>
-        </div>  
+           </div>
+           <div class="Comprar">
+          <button class="BotonCompra" type="submit">
+            <span>Confirmar Compra</span>
+          </button>
+          </div>
+        </div>
+        </li>
+      </div>
     </main>
 
     <footer class="bg-body-tertiary text-center text-lg-start">
@@ -85,7 +101,7 @@
           <div class="row">
             <!--Grid column-->
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h2 class="text-uppercase fw-bold">Mega Games</h2>
+              <h5 class="text-uppercase">Mega Games</h5>
       
               <p>
                 Tu universo de videojuegos donde encontraras los mejores precios para los mejores videojuegos :D
@@ -95,7 +111,7 @@
       
             <!--Grid column-->
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h2 class="text-uppercase fw-bold" id="contacto">Informacion</h2>
+              <h5 class="text-uppercase">Informacion</h5>
       
               <p>📍Ubicación: Calle de los Gamers, 42, Ciudad de los Juegos, Mundo Virtual</p>
 
