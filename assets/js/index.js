@@ -1,4 +1,5 @@
 import { getJuegos } from "./getJuegos.js";
+import { addToCart } from "./funcionesCarrito.js"; 
 
 const enviarDatos = (id, nombre, genero, desarrollador, plataformas, precio, foto) => {
 
@@ -30,6 +31,9 @@ const enviarDatos = (id, nombre, genero, desarrollador, plataformas, precio, fot
 
 			const nuevoHTML = new XMLSerializer().serializeToString(doc);
 			document.body.innerHTML = nuevoHTML; // inyectar html de personaje.html al index.html para "mostrarlo por encima"
+			
+			const btnAddToCart = document.getElementById('btnCarrito')
+			btnAddToCart.addEventListener("click", () => { addToCart() })
 		})
 		.catch((error) => {
 			console.log(`El error es: ${error}`);
