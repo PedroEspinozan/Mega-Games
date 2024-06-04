@@ -1,6 +1,6 @@
 import { getJuegos } from "./getJuegos.js";
 
-const enviarDatos = (id, nombre, genero, precio, foto) => {
+const enviarDatos = (id, nombre, genero, desarrollador, plataformas, precio, foto) => {
 
 	const rutaArchivoHTML = "assets/sitio/jueguito.html";
 
@@ -18,6 +18,12 @@ const enviarDatos = (id, nombre, genero, precio, foto) => {
 
 			const juegoGenero = doc.getElementById('genero');
 			juegoGenero.textContent = `Genero: ${genero}`;
+			
+			const juegoDesar = doc.getElementById('desarrollador');
+			juegoDesar.textContent = `Desarrollador: ${desarrollador}`;
+			
+			const juegoPlat = doc.getElementById('plataformas');
+			juegoPlat.textContent = `Plataformas: ${plataformas}`;
 
 			const juegoPrecio = doc.getElementById('precio');
 			juegoPrecio.textContent = `Precio: ${precio}`;
@@ -36,7 +42,7 @@ const crearCard = (results = []) => {
 
 	results.map( (result) => {
 		
-        const { id, nombre, genero, precio, foto} = result;
+        const { id, nombre, genero, desarrollador, plataformas, precio, foto} = result;
 		
 		const divCol = document.createElement("div");
 		divCol.classList.add("col-xl-3");
@@ -76,7 +82,7 @@ const crearCard = (results = []) => {
         btnVer.classList.add("btn-input");
         btnVer.textContent = "Ver detalles";
         btnVer.addEventListener("click",()=> {
-            enviarDatos(id, nombre, genero, precio, foto);
+            enviarDatos(id, nombre, genero, desarrollador, plataformas, precio, foto);
         });
 
 		divCol.append(card);
