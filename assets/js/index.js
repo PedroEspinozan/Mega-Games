@@ -17,10 +17,10 @@ const enviarDatos = (id, nombre, genero, precio, foto) => {
 			juegoNombre.textContent = `${nombre}`;
 
 			const juegoGenero = doc.getElementById('genero');
-			juegoGenero.textContent = `Genero : ${genero}`;
+			juegoGenero.textContent = `Genero: ${genero}`;
 
 			const juegoPrecio = doc.getElementById('precio');
-			juegoPrecio.textContent = `Precio : ${precio}`;
+			juegoPrecio.textContent = `Precio: ${precio}`;
 
 			const nuevoHTML = new XMLSerializer().serializeToString(doc);
 			document.body.innerHTML = nuevoHTML; // inyectar html de personaje.html al index.html para "mostrarlo por encima"

@@ -10,14 +10,6 @@ body {
     background-color: rgb(20, 16, 41, 255) !important;
 }
 
-.bg-input {
-    background-color: rgb(53, 50, 75, 255) !important;
-}
-
-.btn-input {
-    background-color: rgb(39, 39, 39);
-}
-
 .nav-link {
     color: azure;
 }
@@ -28,7 +20,7 @@ body {
 /*fin navbar*/
 
 
-/* cartas de producos */
+/* cartas de productos */
 .productos{
     display: flex;
     justify-content: space-around;
@@ -76,6 +68,19 @@ body {
 .card-text2 {
     font-size: 15px;
 }
+
+.bg-input {
+    background-color: rgb(53, 50, 75, 255) !important;
+}
+
+.btn-input {
+    background-color: rgb(39, 39, 39);
+}
+
+.lineado-bajo {
+    line-height: 8px;
+}
+
 /*fin cartas de productos*/
 
 
