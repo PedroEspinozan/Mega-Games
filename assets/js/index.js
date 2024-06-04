@@ -26,7 +26,7 @@ const enviarDatos = (id, nombre, genero, desarrollador, plataformas, precio, fot
 			juegoPlat.textContent = `Plataformas: ${plataformas}`;
 
 			const juegoPrecio = doc.getElementById('precio');
-			juegoPrecio.textContent = `Precio: ${precio}`;
+			juegoPrecio.textContent = `Precio: $${precio.toLocaleString()}`;
 
 			const nuevoHTML = new XMLSerializer().serializeToString(doc);
 			document.body.innerHTML = nuevoHTML; // inyectar html de personaje.html al index.html para "mostrarlo por encima"
@@ -43,7 +43,7 @@ const crearCard = (results = []) => {
 	results.map( (result) => {
 		
         const { id, nombre, genero, desarrollador, plataformas, precio, foto} = result;
-		
+
 		const divCol = document.createElement("div");
 		divCol.classList.add("col-xl-3");
 		divCol.classList.add("col-lg-3");
@@ -74,7 +74,7 @@ const crearCard = (results = []) => {
 
 		const titlePrecio = document.createElement("p");
         titlePrecio.classList.add("card-text");
-        titlePrecio.textContent = `Precio: ${precio}`;
+        titlePrecio.textContent = `Precio: $${precio.toLocaleString()}`;
 
         const btnVer = document.createElement("button");
         btnVer.classList.add("text-light");
