@@ -60,7 +60,7 @@ body {
 }
 .card-body {
     color: aliceblue;
-    background-color: rgb(8, 35, 53);
+    background-color: rgb(20, 16, 41, 255) !important;
     border-radius: 3%;
     filter: drop-shadow(0 0 0.35rem black);
 }

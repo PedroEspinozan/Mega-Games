@@ -14,7 +14,7 @@ const enviarDatos = (id, nombre, genero, precio, foto) => {
 			juegoFoto.src = foto;
 
 			const juegoNombre = doc.getElementById('nombre');
-			juegoNombre.textContent = `Nombre: ${nombre}`;
+			juegoNombre.textContent = `${nombre}`;
 
 			const juegoGenero = doc.getElementById('genero');
 			juegoGenero.textContent = `Genero : ${genero}`;
@@ -71,8 +71,9 @@ const crearCard = (results = []) => {
         titlePrecio.textContent = `Precio: ${precio}`;
 
         const btnVer = document.createElement("button");
+        btnVer.classList.add("text-light");
         btnVer.classList.add("btn");
-        btnVer.classList.add("btn-warning");
+        btnVer.classList.add("btn-input");
         btnVer.textContent = "Ver detalles";
         btnVer.addEventListener("click",()=> {
             enviarDatos(id, nombre, genero, precio, foto);
