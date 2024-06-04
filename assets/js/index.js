@@ -36,7 +36,7 @@ const crearCard = (results = []) => {
 
 	results.map( (result) => {
 		
-        const { id , name : nombre, genero , precio , image : foto} = result;
+        const { id, nombre, genero, precio, foto} = result;
 		
 		const divCol = document.createElement("div");
 		divCol.classList.add("col-xl-3");
