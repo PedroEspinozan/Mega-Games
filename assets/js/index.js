@@ -1,5 +1,5 @@
 import { getJuegos } from "./getJuegos.js";
-import { addToCart } from "./funcionesCarrito.js"; 
+import { addToCart } from "./addToCart.js"; 
 
 const enviarDatos = (id, nombre, genero, desarrollador, plataformas, precio, foto) => {
 
@@ -33,7 +33,7 @@ const enviarDatos = (id, nombre, genero, desarrollador, plataformas, precio, fot
 			document.body.innerHTML = nuevoHTML; // inyectar html de personaje.html al index.html para "mostrarlo por encima"
 			
 			const btnAddToCart = document.getElementById('btnCarrito')
-			btnAddToCart.addEventListener("click", () => { addToCart() })
+			btnAddToCart.addEventListener("click", () => { addToCart(id, nombre, precio, foto) })
 		})
 		.catch((error) => {
 			console.log(`El error es: ${error}`);
@@ -74,11 +74,12 @@ const crearCard = (results = []) => {
 
         const titleGenero = document.createElement("p");
         titleGenero.classList.add("card-text");
-        titleGenero.textContent = `Genero: ${genero}`;
+        titleGenero.textContent = `${genero}`;
 
 		const titlePrecio = document.createElement("p");
         titlePrecio.classList.add("card-text");
-        titlePrecio.textContent = `Precio: $${precio.toLocaleString()}`;
+        titlePrecio.classList.add("fw-bold");
+        titlePrecio.textContent = `$${precio.toLocaleString()}`;
 
         const btnVer = document.createElement("button");
         btnVer.classList.add("text-light");

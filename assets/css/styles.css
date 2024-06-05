@@ -78,7 +78,7 @@ body {
 }
 
 .lineado-bajo {
-    line-height: 8px;
+    line-height: 14px;
 }
 
 /*fin cartas de productos*/
@@ -120,7 +120,7 @@ footer {
 /* Carrito */
 .card-bodyShop {
     color: aliceblue;
-    background-color: rgb(8, 35, 53);
+    background-color: rgb(20, 16, 41, 255) !important;
     border-radius: 3%;
     filter: drop-shadow(0 0 0.35rem black);
     } 
